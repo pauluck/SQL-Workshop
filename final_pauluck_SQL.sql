@@ -70,7 +70,7 @@ INSERT INTO Travel (TravelDate, TravelType, RouteId, WaitTime, TrafficTime) VALU
 -- Select everything from both tables
 SELECT travel.*, routes.* FROM travel LEFT JOIN routes ON travel.routeid=routes.routeid;
 
--- Find the grand total weight time
+-- Find the grand total wait time
 SELECT sum(waittime) from travel;
 
 -- What is the total cost traveling by car?
