@@ -47,3 +47,5 @@ SELECT a.name, min(f.dep_time), w.temp
  INNER JOIN airlines a ON f.carrier = a.carrier
  INNER JOIN weather w ON f.origin = w.origin AND f.year=w.year AND f.month=w.month AND f.day=w.day
  WHERE f.origin = 'EWR' AND f.year=2013 AND f.month=1 AND f.day=1;
+ 
+ -- ----------------------------------------------------------------------------------
